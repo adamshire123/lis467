@@ -1,0 +1,23 @@
+
+body {
+  font: normal 100% Helvetica, Arial, sans-serif;
+}
+
+#page {
+  margin: 40px auto;
+  padding: 0 1em;
+  max-width: 61.75em;
+}
+
+section {
+  background-color: yellow;
+  padding: 0 10px;
+  border: solid 1px black;
+}
+
+@media screen and (min-width: 480px) {
+  section {
+    float: left;
+    width: 20%;
+  }
+}
