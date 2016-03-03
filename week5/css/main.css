@@ -15,9 +15,15 @@ section {
   border: solid 1px black;
 }
 
+article {
+  width: 85.425%;
+}
+
 @media screen and (min-width: 480px) {
   section {
     float: left;
     width: 20%;
   }
+  article {
+    padding-left: 12.551%;
 }
