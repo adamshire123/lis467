@@ -65,6 +65,39 @@ header, main, section, footer, nav {padding: 3px; border: 1px solid black; margi
 
 
 
+/* ==========================================================================
+   Search Blaster
+   ========================================================================== */
+
+
+
+		.choose-db-list{ list-style-type:none;padding:0;margin:10px 0 0 0;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:9pt;width:375px; }
+		.choose-db-check{ width:20px;float:left;padding-left:5px;padding-top:5px; }
+		.choose-db-detail{ margin-left:30px;border-left:solid 1px #E7E7E7;padding:5px 11px 7px 11px;line-height:1.4em; }
+		.summary { background-color:#1D5DA7;color:#FFFFFF;border:solid 1px #1D5DA7; }
+		.one { background-color: #FFFFFF;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
+		.two { background-color: #F5F5F5;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
+		.selected { background-color: #E0EFF7;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
+		#ebscohostCustomSearchBox #disciplineBlock { width:auto; }
+		#ebscohostCustomSearchBox .limiter { float:left;margin:0;padding:0;width:50%; }
+		
+		#ebscohostsearchtext { width: 144px; }
+		#ebscohostsearchtext.edspub { width: 245px; }
+		
+		.ebscohost-search-button.edspub {
+			border: 1px solid #156619;
+			padding: 5px 10px !important;
+			border-radius: 3px;
+			color: #fff;
+			font-weight: bold;
+			background-color: #156619;
+		}
+		
+		.ebscohost-title.edspub {
+			color: #1c7020;
+			font-weight: bold;
+		}
+
 
 
 
