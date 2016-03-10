@@ -79,7 +79,7 @@ header, main, section, footer, nav {padding: 3px; border: 1px solid black; margi
 		.two { background-color: #F5F5F5;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
 		.selected { background-color: #E0EFF7;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
 		#ebscohostCustomSearchBox #disciplineBlock { width:auto; }
-		#ebscohostCustomSearchBox .limiter { float:left;margin:0;padding:0;width:50%; }
+		/*#ebscohostCustomSearchBox .limiter { float:left;margin:0;padding:0;width:50%; } */
 		
 		#ebscohostsearchtext { width: 144px; }
 		#ebscohostsearchtext.edspub { width: 245px; }
