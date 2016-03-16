@@ -56,11 +56,48 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+main,
+section,
+footer,
+header
+ {
+    padding: 3px;
+    border: 1px solid black;
+    margin: 3px;
+}
 
-header, main, section, footer, nav {padding: 3px; border: 1px solid black; margin: 3px;}
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: white;
+}
 
+.fixed-nav-bar li {
+    float: left
+}
 
+.fixed-nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
+.fixed-nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 13px;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 88px;
+}
 
 
 
@@ -69,55 +106,102 @@ header, main, section, footer, nav {padding: 3px; border: 1px solid black; margi
    Search Blaster
    ========================================================================== */
 
+.choose-db-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    width: 375px;
+}
+
+.choose-db-check {
+    width: 20px;
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.choose-db-detail {
+    margin-left: 30px;
+    border-left: solid 1px #E7E7E7;
+    padding: 5px 11px 7px 11px;
+    line-height: 1.4em;
+}
+
+.summary {
+    background-color: #1D5DA7;
+    color: #FFFFFF;
+    border: solid 1px #1D5DA7;
+}
+
+.one {
+    background-color: #FFFFFF;
+    border: solid 1px #E7E7E7;
+    border-top: solid 1px #FFFFFF;
+}
+
+.two {
+    background-color: #F5F5F5;
+    border: solid 1px #E7E7E7;
+    border-top: solid 1px #FFFFFF;
+}
+
+.selected {
+    background-color: #E0EFF7;
+    border: solid 1px #E7E7E7;
+    border-top: solid 1px #FFFFFF;
+}
+
+#ebscohostCustomSearchBox #disciplineBlock {
+    width: auto;
+}
 
 
-		.choose-db-list{ list-style-type:none;padding:0;margin:10px 0 0 0;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:9pt;width:375px; }
-		.choose-db-check{ width:20px;float:left;padding-left:5px;padding-top:5px; }
-		.choose-db-detail{ margin-left:30px;border-left:solid 1px #E7E7E7;padding:5px 11px 7px 11px;line-height:1.4em; }
-		.summary { background-color:#1D5DA7;color:#FFFFFF;border:solid 1px #1D5DA7; }
-		.one { background-color: #FFFFFF;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
-		.two { background-color: #F5F5F5;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
-		.selected { background-color: #E0EFF7;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
-		#ebscohostCustomSearchBox #disciplineBlock { width:auto; }
-		/*#ebscohostCustomSearchBox .limiter { float:left;margin:0;padding:0;width:50%; } */
-		
-		#ebscohostsearchtext { width: 144px; }
-		#ebscohostsearchtext.edspub { width: 245px; }
-		
-		.ebscohost-search-button.edspub {
-			border: 1px solid #156619;
-			padding: 5px 10px !important;
-			border-radius: 3px;
-			color: #fff;
-			font-weight: bold;
-			background-color: #156619;
-		}
-		
-		.ebscohost-title.edspub {
-			color: #1c7020;
-			font-weight: bold;
-		}
+/*#ebscohostCustomSearchBox .limiter { float:left;margin:0;padding:0;width:50%; } */
 
+#ebscohostsearchtext {
+    width: 144px;
+}
 
+#ebscohostsearchtext.edspub {
+    width: 245px;
+}
 
+.ebscohost-search-button.edspub {
+    border: 1px solid #156619;
+    padding: 5px 10px !important;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #156619;
+}
 
-
+.ebscohost-title.edspub {
+    color: #1c7020;
+    font-weight: bold;
+}
 
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 35em) {}
 
+@media only screen and (max-width: 20em) { /* screen is REAL small */
+    .fixed-nav-bar {
+        position: static;
+    }
+    main {margin-top: 0;}
+    .fixed-nav-bar li {float: none}
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
 
-}
 
 /* ==========================================================================
    Helper classes
@@ -167,64 +251,53 @@ header, main, section, footer, nav {padding: 3px; border: 1px solid black; margi
     *zoom: 1;
 }
 
+
 /* ==========================================================================
    Print styles
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
+    *, *:before, *:after {
         background: transparent !important;
         color: #000 !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
