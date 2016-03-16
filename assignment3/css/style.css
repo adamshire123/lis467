@@ -58,13 +58,14 @@ textarea {
 
 main,
 section,
-footer,
-
+footer
  {
     padding: 3px;
     border: 1px solid black;
     margin: 3px;
 }
+
+header {padding-top:5px;}
 
 .fixed-nav-bar {
     position: fixed;
