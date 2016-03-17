@@ -58,14 +58,20 @@ textarea {
 
 main,
 section,
-footer
- {
-    padding: 3px;
+footer,
+header {
+    margin: auto;
+    max-width: 60em;
     border: 1px solid black;
-    margin: 3px;
+    padding: 3px;
+    background-color: #FFF
 }
 
-header {padding-top:5px;}
+main {
+    padding-top: 20em;
+    background: url(https://josancaballero.files.wordpress.com/2009/10/3dfiction_fractal_01.jpg) no-repeat center fixed;
+    background-size: 60.5em;
+}
 
 .fixed-nav-bar {
     position: fixed;
@@ -73,7 +79,6 @@ header {padding-top:5px;}
     left: 0;
     right: 0;
     z-index: 9999;
-    background-color: white;
 }
 
 .fixed-nav-bar li {
@@ -95,12 +100,6 @@ header {padding-top:5px;}
     padding: 14px 13px;
     text-decoration: none;
 }
-
-main {
-    margin-top: 88px;
-}
-
-
 
 
 /* ==========================================================================
@@ -188,14 +187,23 @@ main {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {}
+@media only screen and (min-width: 30em) {
+    /*screen must be this large */
+}
 
-@media only screen and (max-width: 20em) { /* screen is REAL small */
+@media only screen and (max-width: 20.25em) {
+    /* screen is smaller than this */
     .fixed-nav-bar {
         position: static;
     }
-    main {margin-top: 0;}
-    .fixed-nav-bar li {float: none}
+    main {
+        margin-top: 0;
+        padding-top: 0;
+        background-image: none
+    }
+    .fixed-nav-bar li {
+        float: none
+    }
 }
 
 @media print,
