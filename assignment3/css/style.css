@@ -69,8 +69,8 @@ header {
 
 main {
     padding-top: 20em;
-    background: url(https://josancaballero.files.wordpress.com/2009/10/3dfiction_fractal_01.jpg) no-repeat center fixed;
-    background-size: 60.5em;
+    background: url(http://wit.edu/library-renovation/images/hero1.jpg) no-repeat center fixed;
+    /*background-size: cover;*/
 }
 
 .fixed-nav-bar {
