@@ -56,49 +56,70 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-main,
+div,
 section,
-footer,
-header {
+footer {
+    border: 1px solid black;
+    margin: 1px;
+    background-color: #fff;
+}
+
+
+/*wireframing */
+
+body {
     margin: auto;
     max-width: 60em;
-    border: 1px solid black;
-    padding: 3px;
-    background-color: #FFF
+    background-color: #fff;
 }
-
-main {
-    padding-top: 20em;
-    background: url(http://wit.edu/library-renovation/images/hero1.jpg) no-repeat center fixed;
-    /*background-size: cover;*/
-}
-
-.fixed-nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-}
-
-.fixed-nav-bar li {
-    float: left
-}
-
-.fixed-nav-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.fixed-nav-bar li a {
-    display: block;
-    color: white;
+ header {position: relative;
+ }
+ 
+.global-header {
     text-align: center;
-    padding: 14px 13px;
+    font-size: 1em;
+   /* background-image: url(../images/wit-logo.svg);
+    background-repeat: no-repeat;
+    background-position: left center ;
+    background-origin: border-box;
+    background-size: 1.5em;
+    margin-left: .5em; */
+    position:relative;
+}
+.global-header:before {
+    content: '';
+    padding:1em;
+    margin-right: .5em;
+    background-image: url(../images/wit-logo.svg);
+    background-repeat: no-repeat;
+    background-position: right center ;
+    background-origin: border-box;
+    
+}
+
+
+.global-nav {
+    text-align: center;
+}
+
+.global-nav ul {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+
+.global-nav li a {
+    display: block;
     text-decoration: none;
+    color: #000;
+    padding: 1em;
+    margin: 1px 0;
+    
+}
+
+.global-nav li a:hover {
+    text-decoration: underline;
 }
 
 
@@ -187,23 +208,62 @@ main {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 29em) {
     /*screen must be this large */
+    main {
+        padding-top: 20em;
+        background: url(../images/hero1.jpg) no-repeat center top fixed;
+        /*background-size: contain;*/
+    }
+   
+    .global-header {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: -.01em;
+    }
+    
+    .global-nav li {
+        display:inline-block;
+        
+    }
+  
+    
+    .global-nav li a {
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+        padding: .25em 1em;
+        /*border-width:0 1px 0 0 ; 
+        border-style: solid; 
+        border-color:#444; */
+    }
 }
 
-@media only screen and (max-width: 20.25em) {
-    /* screen is smaller than this */
-    .fixed-nav-bar {
-        position: static;
+@media only screen and (min-width: 46.875em) {
+    .global-header {
+        text-align: left;
+        margin-left:1em;
     }
-    main {
-        margin-top: 0;
-        padding-top: 0;
-        background-image: none
+   
+    .global-nav {
+        position: absolute;
+        top:0;
+        right:0;
+        margin:0;
+        padding:0;
     }
-    .fixed-nav-bar li {
-        float: none
+    .global-nav li {margin:0; padding:0;}
+    .global-nav li a {padding: .344em .5em;}   
+        
+}
+
+
+@media only screen and (min-width: 60em) {
+    /*screen must be this large */
+    .global-header {
+        font-size: 2em;
     }
+   .global-nav li a {padding: .688em 1em;}
 }
 
 @media print,
