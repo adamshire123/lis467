@@ -62,14 +62,6 @@ body {
     background-color: #fff;
 }
 
-section,
-footer {
-    border: 1px solid black;
-    background-color: #fff;
-}
-
-
-
 header {
     position: relative;
 }
@@ -118,50 +110,87 @@ header {
     text-decoration: underline;
 }
 
-section{margin-top:1em;}
+section {
+    margin-top: 1em;
+}
 
 main {
     padding: 1em;
 }
 
-main li{margin-top: 1em;}
-
-.search-blaster {
-    text-align: center;
-    background-color: rgb(205, 205, 205);
-    border: none;
+main li {
+    margin-top: 1em;
 }
 
-#ebscohostsearchtext {}
+#ebscohostCustomSearchBox {border-radius: 5px;}
+    
+    .query {
+    overflow:hidden;
+}
 
-.ebscohost-search-button {}
+#ebscohostsearchtext { 
+    width:100%;
+    padding:12px 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.ebscohost-search-button {
+    
+    background-color: orange;
+    float:right;
+    height:44px;
+    border:none;
+    color: white;
+    padding:.5em 2%;
+    font-size: 1em;
+    border-radius: 0 4px 4px 0;
+    
+}
+
+.container {
+    position: relative;
+    display: block;
+    
+}
 
 .bucket {
-    background-color: rgba(200, 0, 100, 0.96);
     color: #fff;
     padding: 5%;
     position: relative;
     display: block;
+    
 }
 
 .bucket a {
     color: #fff;
 }
 
-.container {
-    position: relative;
-    display: block;
+#quick-links {
+    background-color: rgba(200, 200, 100, 0.96);
 }
 
+#quick-contact {
+    background-color: rgba(100, 200, 200, 0.96);
+}
+
+
+
 footer {
-    clear: both;
     background-color: rgba(0, 0, 0, .6);
+    padding:1em;
 }
 
 footer a {
     color: #FFF;
 }
-footer li {margin-top: 1em;}
+
+footer li {
+    margin-top: 1em;
+}
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -170,7 +199,7 @@ footer li {margin-top: 1em;}
     /*screen must be this large */
     main {
         background: url(../images/hero1.jpg) no-repeat center top fixed;
-        background-size: cover;
+        background-size: auto 700px;
         padding-top: 5%;
     }
     .global-header {
@@ -189,25 +218,18 @@ footer li {margin-top: 1em;}
         border-style: solid; 
         border-color:#444; */
     }
-    #ebscohostsearchtext {
-        font-size: 1.5em;
-    }
-    .ebscohost-search-button {
-        font-size: 1.5em
-    }
     
-    .container{margin-top:6%;}
 }
+
 @media only screen and (min-width: 41.25em) {
     .container {
         text-align: center;
-        
     }
     .bucket {
-        margin: 1em;
+        margin: 5% 2% ;
         padding: 2%;
         text-align: left;
-        width: 39%;
+        width: 35%;
         vertical-align: top;
         display: inline-block;
         min-height: 22em;
@@ -247,6 +269,7 @@ footer li {margin-top: 1em;}
     #ebscohostsearchtext {
         font-size: 2em;
     }
+    .ebscohost-search-button {height:63px}
 }
 
 @media print,
