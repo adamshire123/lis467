@@ -56,47 +56,45 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-div,
-section,
-footer {
-    border: 1px solid black;
-    margin: 1px;
-    background-color: #fff;
-}
-
-
-/*wireframing */
-
 body {
     margin: auto;
     max-width: 60em;
     background-color: #fff;
 }
- header {position: relative;
- }
- 
+
+section,
+footer {
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+
+
+header {
+    position: relative;
+}
+
 .global-header {
     text-align: center;
     font-size: 1em;
-   /* background-image: url(../images/wit-logo.svg);
+    /* background-image: url(../images/wit-logo.svg);
     background-repeat: no-repeat;
     background-position: left center ;
     background-origin: border-box;
     background-size: 1.5em;
     margin-left: .5em; */
-    position:relative;
+    position: relative;
 }
+
 .global-header:before {
     content: '';
-    padding:1em;
+    padding: 1em;
     margin-right: .5em;
     background-image: url(../images/wit-logo.svg);
     background-repeat: no-repeat;
-    background-position: right center ;
+    background-position: right center;
     background-origin: border-box;
-    
 }
-
 
 .global-nav {
     text-align: center;
@@ -105,9 +103,8 @@ body {
 .global-nav ul {
     list-style: none;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
-
 
 .global-nav li a {
     display: block;
@@ -115,95 +112,56 @@ body {
     color: #000;
     padding: 1em;
     margin: 1px 0;
-    
 }
 
 .global-nav li a:hover {
     text-decoration: underline;
 }
 
+section{margin-top:1em;}
 
-/* ==========================================================================
-   Search Blaster
-   ========================================================================== */
-
-.choose-db-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 9pt;
-    width: 375px;
+main {
+    padding: 1em;
 }
 
-.choose-db-check {
-    width: 20px;
-    float: left;
-    padding-left: 5px;
-    padding-top: 5px;
+main li{margin-top: 1em;}
+
+.search-blaster {
+    text-align: center;
+    background-color: rgb(205, 205, 205);
+    border: none;
 }
 
-.choose-db-detail {
-    margin-left: 30px;
-    border-left: solid 1px #E7E7E7;
-    padding: 5px 11px 7px 11px;
-    line-height: 1.4em;
-}
+#ebscohostsearchtext {}
 
-.summary {
-    background-color: #1D5DA7;
-    color: #FFFFFF;
-    border: solid 1px #1D5DA7;
-}
+.ebscohost-search-button {}
 
-.one {
-    background-color: #FFFFFF;
-    border: solid 1px #E7E7E7;
-    border-top: solid 1px #FFFFFF;
-}
-
-.two {
-    background-color: #F5F5F5;
-    border: solid 1px #E7E7E7;
-    border-top: solid 1px #FFFFFF;
-}
-
-.selected {
-    background-color: #E0EFF7;
-    border: solid 1px #E7E7E7;
-    border-top: solid 1px #FFFFFF;
-}
-
-#ebscohostCustomSearchBox #disciplineBlock {
-    width: auto;
-}
-
-
-/*#ebscohostCustomSearchBox .limiter { float:left;margin:0;padding:0;width:50%; } */
-
-#ebscohostsearchtext {
-    width: 144px;
-}
-
-#ebscohostsearchtext.edspub {
-    width: 245px;
-}
-
-.ebscohost-search-button.edspub {
-    border: 1px solid #156619;
-    padding: 5px 10px !important;
-    border-radius: 3px;
+.bucket {
+    background-color: rgba(200, 0, 100, 0.96);
     color: #fff;
-    font-weight: bold;
-    background-color: #156619;
+    padding: 5%;
+    position: relative;
+    display: block;
 }
 
-.ebscohost-title.edspub {
-    color: #1c7020;
-    font-weight: bold;
+.bucket a {
+    color: #fff;
 }
 
+.container {
+    position: relative;
+    display: block;
+}
 
+footer {
+    clear: both;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+footer a {
+    color: #FFF;
+}
+footer li {margin-top: 1em;}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -211,23 +169,17 @@ body {
 @media only screen and (min-width: 29em) {
     /*screen must be this large */
     main {
-        padding-top: 20em;
         background: url(../images/hero1.jpg) no-repeat center top fixed;
-        /*background-size: contain;*/
+        background-size: cover;
+        padding-top: 5%;
     }
-   
     .global-header {
         font-size: 1.5em;
         text-align: center;
-        margin-bottom: -.01em;
     }
-    
     .global-nav li {
-        display:inline-block;
-        
+        display: inline-block;
     }
-  
-    
     .global-nav li a {
         display: inline-block;
         text-align: center;
@@ -237,33 +189,64 @@ body {
         border-style: solid; 
         border-color:#444; */
     }
+    #ebscohostsearchtext {
+        font-size: 1.5em;
+    }
+    .ebscohost-search-button {
+        font-size: 1.5em
+    }
+    
+    .container{margin-top:6%;}
+}
+@media only screen and (min-width: 41.25em) {
+    .container {
+        text-align: center;
+        
+    }
+    .bucket {
+        margin: 1em;
+        padding: 2%;
+        text-align: left;
+        width: 39%;
+        vertical-align: top;
+        display: inline-block;
+        min-height: 22em;
+    }
 }
 
 @media only screen and (min-width: 46.875em) {
     .global-header {
         text-align: left;
-        margin-left:1em;
+        margin-left: 1em;
+        margin-bottom: -.01em;
     }
-   
     .global-nav {
         position: absolute;
-        top:0;
-        right:0;
-        margin:0;
-        padding:0;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
     }
-    .global-nav li {margin:0; padding:0;}
-    .global-nav li a {padding: .344em .5em;}   
-        
+    .global-nav li {
+        margin: 0;
+        padding: 0;
+    }
+    .global-nav li a {
+        padding: .344em .5em;
+    }
 }
-
 
 @media only screen and (min-width: 60em) {
     /*screen must be this large */
     .global-header {
         font-size: 2em;
     }
-   .global-nav li a {padding: .688em 1em;}
+    .global-nav li a {
+        padding: .688em 1em;
+    }
+    #ebscohostsearchtext {
+        font-size: 2em;
+    }
 }
 
 @media print,

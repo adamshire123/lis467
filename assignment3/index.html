@@ -34,9 +34,9 @@
         </nav>
     </header>
 
-    <main>main
-        <section id="search-blaster">
-            <h2>Search Blaster</h2>
+    <main>
+        <section class="search-blaster">
+
             <!-- EBSCOhost Custom Search Box Begins -->
             <script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
 
@@ -50,8 +50,8 @@
                 <div>
 
 
-                    <input id="ebscohostsearchtext" class="" name="ebscohostsearchtext" type="text" size="23" />
-                    <input type="submit" value="Search" class="ebscohost-search-button " />
+                    <input id="ebscohostsearchtext" class="" name="ebscohostsearchtext" type="text" placeholder="I want to find..." />
+                    <input type="submit" value="search" class="ebscohost-search-button" />
 
                     <!-- <div id="guidedFieldSelectors">
                                 <input class="radio" type="radio" name="searchFieldSelector" id="guidedField_0" value="" checked="checked" />
@@ -66,30 +66,6 @@
 
                 </div>
 
-                <!-- <div id="limiterblock">
-                    <div id="limitertitle">Limit Your Results</div>
-
-                    <div class="limiter">
-                        <input type="checkbox" id="chkFullText" name="chkFullText" />
-                        <label for="chkFullText">Full Text</label>
-                    </div>
-
-                    <div class="limiter">
-                        <input type="checkbox" id="chkLibraryCollection" name="chkLibraryCollection" checked="checked" />
-                        <label for="chkLibraryCollection">Available in Library Collection</label>
-                    </div>
-
-                    <div class="limiter">
-                        <input type="checkbox" id="chkPeerReviewed" name="chkPeerReviewed" />
-                        <label for="chkPeerReviewed">Peer Reviewed</label>
-                    </div>
-
-                    <div class="limiter">
-                        <input type="checkbox" id="chkCatalogOnly" name="chkCatalogOnly" />
-                        <label for="chkCatalogOnly">Catalog Only</label>
-                    </div>
-
-                </div> -->
 
 
             </form>
@@ -98,24 +74,29 @@
 
         </section>
         <!--end #search-blaster -->
-
-        <section>
-            <h2>Quick Links</h2>
-            <ul>
-                <li><a href="#">link 1</a></li>
-                <li><a href="#">link 2</a></li>
-                <li><a href="#">link 3</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Get Help</h2>
-            <ul>
-                <li>Call: (617) 980-3042</li>
-                <li>Text: (617) 600-5989</li>
-                <li><a href="#">library@wit.edu</a></li>
-            </ul>
-            <p>Need research help? <a href="#">Meet with us</a> for a research session.</p>
-        </section>
+        <div class="container">
+            <section class="bucket">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Printing Help</a></li>
+                    <li><a href="#">How do I...?</a></li>
+                    <li><a href="#">Research Guides</a></li>
+                    <li><a href="#">Donut Friday</a></li>
+                    <li><a href="#">Reserve a Study Room</a></li>
+                    <li><a href="#">Lost & Found</a></li>
+                    <li><a href="#">Bowling</a></li>
+                </ul>
+            </section>
+            <section class="bucket">
+                <h2>Get Help</h2>
+                <ul>
+                    <li>Call: (617) 980-3042</li>
+                    <li>Text: (617) 600-5989</li>
+                    <li><a href="#">library@wit.edu</a></li>
+                </ul>
+                <p>Need research help? <a href="#">Meet with us</a> for a research session.</p>
+            </section>
+        </div>
     </main>
     <footer>
         <h2>footer</h2>
