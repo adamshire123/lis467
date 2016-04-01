@@ -143,11 +143,13 @@ main li {
     height:44px;
     border:none;
     color: white;
-    padding:.5em 2%;
+    padding:.5em 4%;
     font-size: 1em;
     border-radius: 0 4px 4px 0;
     
 }
+
+.ebscohost-search-button:active{background-color: rgb(189,100,200);}
 
 .container {
     position: relative;
@@ -168,7 +170,7 @@ main li {
 }
 
 #quick-links {
-    background-color: rgba(200, 200, 100, 0.96);
+    background-color: rgba(153, 200, 100, 0.96);
 }
 
 #quick-contact {
