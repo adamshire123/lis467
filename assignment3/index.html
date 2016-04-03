@@ -35,94 +35,117 @@
     </header>
 
     <main>
-        
+
         <!--end #search-blaster -->
         <div class="container">
-            
+
             <section class="search-blaster">
 
-            <!-- EBSCOhost Custom Search Box Begins -->
-            <script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+                <!-- EBSCOhost Custom Search Box Begins -->
+                <script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
 
-            <form id="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
-                <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
-                <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s5071755&groupid=main&profid=eds&mode=bool&lang=en&authtype=ip,guest" />
-                <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" />
-                <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
-                <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
-
-
+                <form id="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
+                    <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
+                    <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s5071755&groupid=main&profid=eds&mode=bool&lang=en&authtype=ip,guest" />
+                    <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" />
+                    <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+                    <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
 
 
-                <fieldset>
 
-                    <input type="submit" value="search" class="ebscohost-search-button" />
-                    <div class="query">
-                        <input id="ebscohostsearchtext" class="" name="ebscohostsearchtext" type="text" placeholder="I want to find..." />
+
+                    <fieldset>
+
+                        <input type="submit" value="search" class="ebscohost-search-button" />
+                        <div class="query">
+                            <input id="ebscohostsearchtext" class="" name="ebscohostsearchtext" type="text" placeholder="I want to find..." />
+                        </div>
+                    </fieldset>
+
+
+
+
+
+
+
+                </form>
+                <!-- EBSCOhost Custom Search Box Ends -->
+
+
+            </section> <!--/end .search-blaster-->
+
+            <section id="panel-group">
+                <div class="panel">
+                    <div id="hours" class="bucket">
+                        <h2 class="link-heading">Library Hours</h2>
+                        <h3>Currently: OPEN</h3>
+                        <P>Today's Hours: <em>7am-6pm</em></P>
+                        <p><a href="#">See all hours</a></p>
                     </div>
-                </fieldset>
-
-
-
-
-
-
-
-            </form>
-            <!-- EBSCOhost Custom Search Box Ends -->
-
-
-        </section>
-            
-            <section id="quick-links" class="bucket">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="#">Printing Help</a></li>
-                    <li><a href="#">How do I...?</a></li>
-                    <li><a href="#">Research Guides</a></li>
-                    <li><a href="#">Donut Friday</a></li>
-                    <li><a href="#">Reserve a Study Room</a></li>
-                    <li><a href="#">Lost & Found</a></li>
-                    <li><a href="#">Bowling</a></li>
-                </ul>
+                    <div id="quick-contact" class="bucket">
+                        <h2 class="link-heading">Get Help</h2>
+                        <ul>
+                            <li>Call: (617) 980-3042</li>
+                            <li>Text: (617) 600-5989</li>
+                            <li><a href="#">library@wit.edu</a></li>
+                        </ul>
+                        <p>Need research help? <a href="#">Meet with us</a> for a research session.</p>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div id="quick-links" class="bucket">
+                    <h2 class="link-heading">Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Printing Help</a></li>
+                        <li><a href="#">How do I...?</a></li>
+                        <li><a href="#">Research Guides</a></li>
+                        <li><a href="#">Donut Friday</a></li>
+                        <li><a href="#">Reserve a Study Room</a></li>
+                        <li><a href="#">Lost & Found</a></li>
+                        <li><a href="#">Bowling</a></li>
+                    </ul>
+                    </div>
+                </div>
+                
             </section>
-            <section id="quick-contact" class="bucket">
-                <h2>Get Help</h2>
-                <ul>
-                    <li>Call: (617) 980-3042</li>
-                    <li>Text: (617) 600-5989</li>
-                    <li><a href="#">library@wit.edu</a></li>
-                </ul>
-                <p>Need research help? <a href="#">Meet with us</a> for a research session.</p>
-            </section>
+            <!--/end .panel-group -->
         </div>
     </main>
     <footer>
-        <h2>footer</h2>
-        <h3>Find</h3>
-        <ul>
-            <li>Books, Articles, & More</li>
-            <li>Course Reserves & Course Guides</li>
-            <li>Resources by Subject</li>
-            <li>See All Resources</li>
-        </ul>
-        <h3>Services</h3>
-        <ul>
-            <li>Borrow, Request, Renew</li>
-            <li>Get help with research</li>
-            <li>For Faculty</li>
-            <li>Print & Scan</li>
-            <li>Find a place to study</li>
-            <li>See all services</li>
-        </ul>
-        <h3>Get Help</h3>
-        <ul>
-            <li>Call: (617) 980-3042</li>
-            <li>Text: (617) 600-5989</li>
-            <li><a href="#">library@wit.edu</a></li>
-            <li><a href="#">More ways to get help</a></li>
-        </ul>
+        <section class="library-footer">
+            <div class="footer-links">
+                <h3 class="link-heading">Find</h3>
+                <ul>
+                    <li><a href="#">Books, Articles, & More</a></li>
+                    <li><a href="#">Course Reserves & Course Guides</a></li>
+                    <li><a href="#">Resources by Subject</a></li>
+                    <li><a href="#">See All Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 class="link-heading">Services</h3>
+                <ul>
+                    <li><a href="#">Borrow, Request, Renew</a></li>
+                    <li><a href="#">Get help with research</a></li>
+                    <li><a href="#">For Faculty</a></li>
+                    <li><a href="#">Print & Scan</a></li>
+                    <li><a href="#">Find a place to study</a></li>
+                    <li><a href="#">See all services</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-links">
+                <h3 class="link-heading">About</h3>
+                <ul>
+                    <li><a href="#">Library Calendar</a></li>
+                    <li><a href="#">Job Opportunities</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Staff Directory</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="institute-footer">
+            <h1>Wentworth Institue of Technology</h1></section>
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>

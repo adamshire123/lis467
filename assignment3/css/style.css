@@ -66,6 +66,7 @@ header {
     position: relative;
 }
 
+
 .global-header {
     text-align: center;
     font-size: 1em;
@@ -88,6 +89,7 @@ header {
     background-origin: border-box;
 }
 
+
 .global-nav {
     text-align: center;
 }
@@ -100,10 +102,10 @@ header {
 
 .global-nav li a {
     display: block;
-    text-decoration: none;
     color: #000;
     padding: 1em;
     margin: 1px 0;
+    text-decoration: none;
 }
 
 .global-nav li a:hover {
@@ -122,74 +124,95 @@ main li {
     margin-top: 1em;
 }
 
-#ebscohostCustomSearchBox {border-radius: 5px;}
-    
-    .query {
-    overflow:hidden;
+#ebscohostCustomSearchBox {
+    border-radius: 5px;
 }
 
-#ebscohostsearchtext { 
-    width:100%;
-    padding:12px 1em;
-    border: 1px solid #ccc;
+.query {
+    overflow: hidden
+}
+
+#ebscohostsearchtext {
+    width: 100%;
+    padding: 12px 1em;
+    border: 1px solid #ccc ;
     border-radius: 4px;
-    
 }
 
 .ebscohost-search-button {
-    
     background-color: orange;
-    float:right;
-    height:44px;
-    border:none;
+    float: right;
+    height: 44px;
+    border: none;
     color: white;
-    padding:.5em 4%;
+    padding: .5em 4%;
     font-size: 1em;
     border-radius: 0 4px 4px 0;
-    
 }
 
-.ebscohost-search-button:active{background-color: rgb(189,100,200);}
+.ebscohost-search-button:active {
+    background-color: rgb(189, 100, 200);
+}
 
 .container {
     position: relative;
     display: block;
-    
+}
+
+.link-heading {
+
+    border-bottom: 1px solid;
 }
 
 .bucket {
-    color: #fff;
     padding: 5%;
-    position: relative;
-    display: block;
+}
+
+.bucket .link-heading {color:#fff;}
+
+#hours {
+    background-color: rgba(200, 200, 120, 0.96);
+}
+
+#quick-contact {
+    background-color: rgba(100, 153, 200, 0.96);
+}
+
+#quick-links {
+    background-color: rgba(153, 200, 100, 0.96);
+    height:100%;
+}
+
+footer {
+    background-color: rgba(50, 50, 50, 1);
+    padding: 1em;
     
+}
+
+
+
+.bucket ul,
+.footer-links ul {
+    padding-left: 0;
+}
+
+.bucket li,
+.footer-links li {
+    list-style-type: none
 }
 
 .bucket a {
     color: #fff;
 }
 
-#quick-links {
-    background-color: rgba(153, 200, 100, 0.96);
-}
-
-#quick-contact {
-    background-color: rgba(100, 200, 200, 0.96);
-}
-
-
-
-footer {
-    background-color: rgba(0, 0, 0, .6);
-    padding:1em;
-}
-
-footer a {
-    color: #FFF;
-}
-
-footer li {
+.footer-links li {
     margin-top: 1em;
+}
+.footer-links a {color:#aaa;text-decoration: none;}
+.footer-links a:hover{color:#ccc; text-decoration: underline;}
+.library-footer .link-heading {color:#eee;}
+.institute-footer {
+    clear: left;
 }
 
 
@@ -220,21 +243,20 @@ footer li {
         border-style: solid; 
         border-color:#444; */
     }
-    
 }
 
 @media only screen and (min-width: 41.25em) {
     .container {
         text-align: center;
     }
-    .bucket {
-        margin: 5% 2% ;
-        padding: 2%;
+    .panel {
+        margin: 5% 2%;
         text-align: left;
         width: 35%;
         vertical-align: top;
         display: inline-block;
-        min-height: 22em;
+        color: #fff;
+        height: 30em;
     }
 }
 
@@ -258,6 +280,16 @@ footer li {
     .global-nav li a {
         padding: .344em .5em;
     }
+    .library-footer {
+        position: relative;
+    }
+    .footer-links {
+        margin-right: 2%;
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        position: relative;
+    }
 }
 
 @media only screen and (min-width: 60em) {
@@ -271,7 +303,9 @@ footer li {
     #ebscohostsearchtext {
         font-size: 2em;
     }
-    .ebscohost-search-button {height:63px}
+    .ebscohost-search-button {
+        height: 63px
+    }
 }
 
 @media print,
