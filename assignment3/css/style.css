@@ -124,6 +124,20 @@ main li {
     margin-top: 1em;
 }
 
+.content {border-top:1px solid #aaa;margin-top:1em;}
+
+.introduction{font-size: 1.18em}
+
+dt{display: inline-block;
+    width: 20%;
+    margin: 1em;
+    
+    vertical-align: top;}
+
+dd {display: inline-block;
+    width: 50%;
+    margin: 1em;}
+
 #ebscohostCustomSearchBox {
     border-radius: 5px;
 }
@@ -222,11 +236,11 @@ footer {
 
 @media only screen and (min-width: 29em) {
     /*screen must be this large */
-    main {
-        background: url(../images/hero1.jpg) no-repeat center top fixed;
+    
+       .hero {background: url(../images/hero1.jpg) no-repeat center top fixed;
         background-size: auto 700px;
-        padding-top: 5%;
-    }
+        padding-top: 5%;}
+        
     .global-header {
         font-size: 1.5em;
         text-align: center;
