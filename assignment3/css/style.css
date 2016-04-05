@@ -242,8 +242,8 @@ footer {
 @media only screen and (min-width: 29em) {
     /*screen must be this large */
     .hero {
-        background: url(../images/hero1.jpg) no-repeat center top fixed;
-        background-size: auto 700px;
+        background: url(../images/hero1-small.jpg) no-repeat center top fixed;
+        background-size: auto 100% ;
         padding-top: 5%;
     }
     .global-header {
@@ -263,6 +263,11 @@ footer {
 
 @media only screen and (min-width: 41.25em) {
     
+    .hero {
+        background: url(../images/hero1.jpg) no-repeat center top fixed;
+        background-size: auto 100% ;
+        padding-top: 5%;
+    }
 .container {
         text-align: center;
          
