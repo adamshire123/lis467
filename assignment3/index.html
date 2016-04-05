@@ -21,12 +21,12 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <header>
-        <h2 class="global-header">Douglas D. Schumann Library</h2>
+    <header class="page-container">
+        <h1 class="global-header">Douglas D. Schumann Library</h1>
         <nav class="global-nav">
 
             <ul>
-                <li><a href="#">Find</a></li>
+                <li><a href="find.html">Find</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Get Help</a></li>
                 <li><a href="#">About</a></li>
@@ -34,7 +34,7 @@
         </nav>
     </header>
 
-    <main class="hero">
+    <main class="hero page-container">
 
         <!--end #search-blaster -->
         <div class="container ">
@@ -57,7 +57,7 @@
                     <fieldset>
 
                         <input type="submit" value="search" class="ebscohost-search-button" />
-                        <div class="query">
+                        <div class="search-query">
                             <input id="ebscohostsearchtext" class="" name="ebscohostsearchtext" type="text" placeholder="I want to find..." />
                         </div>
                     </fieldset>
@@ -72,29 +72,32 @@
                 <!-- EBSCOhost Custom Search Box Ends -->
 
 
-            </section> <!--/end .search-blaster-->
+            </section>
+            <!--/end .search-blaster-->
 
-            <section id="panel-group">
-                <div class="panel">
-                    <div id="hours" class="bucket">
-                        <h2 class="link-heading">Library Hours</h2>
-                        <h3>Currently: OPEN</h3>
-                        <P>Today's Hours: <em>7am-6pm</em></P>
-                        <p><a href="#">See all hours</a></p>
-                    </div>
-                    <div id="quick-contact" class="bucket">
-                        <h2 class="link-heading">Get Help</h2>
-                        <ul>
-                            <li>Call: (617) 980-3042</li>
-                            <li>Text: (617) 600-5989</li>
-                            <li><a href="#">library@wit.edu</a></li>
-                        </ul>
-                        <p>Need research help? <a href="#">Meet with us</a> for a research session.</p>
-                    </div>
+            <section id="bucket-group">
+
+                <div id="hours-events" class="bucket">
+                    <h2 class="bucket-heading">Library Hours</h2>
+                    <h3>Currently: OPEN</h3>
+                    <P>Today's Hours: <em>7am-6pm</em></P>
+                    <p><a href="#">See all hours</a></p>
+
                 </div>
-                <div class="panel">
-                    <div id="quick-links" class="bucket">
-                    <h2 class="link-heading">Quick Links</h2>
+
+                <div id="quick-contact" class="bucket">
+                    <h2 class="bucket-heading">Get Help</h2>
+                    <ul>
+                        <li>Call: (617) 980-3042</li>
+                        <li>Text: (617) 600-5989</li>
+                        <li><a href="#">library@wit.edu</a></li>
+                    </ul>
+                    <p>Need research help? <a href="#">Meet with us</a> for a research session.</p>
+                </div>
+
+
+                <div id="quick-links" class="bucket">
+                    <h2 class="bucket-heading">Quick Links</h2>
                     <ul>
                         <li><a href="#">Printing Help</a></li>
                         <li><a href="#">How do I...?</a></li>
@@ -104,17 +107,36 @@
                         <li><a href="#">Lost & Found</a></li>
                         <li><a href="#">Bowling</a></li>
                     </ul>
-                    </div>
                 </div>
-                
+
+
             </section>
+
             <!--/end .panel-group -->
         </div>
     </main>
+    <div class="page-container">
+    <section id="news-events" >
+        <h2>News & Events</h2>
+        <a class="twitter-timeline" data-tweet-limit="3" data-chrome="transparent" href="https://twitter.com/WITLibrary" data-widget-id="717010679874654208">Tweets by @WITLibrary</a>
+        <script>
+            ! function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + "://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");
+        </script>
+    </section>
+    </div>
     <footer>
-        <section class="library-footer">
+        <section class="library-footer page-container">
             <div class="footer-links">
-                <h3 class="link-heading">Find</h3>
+                <h3>Find</h3>
                 <ul>
                     <li><a href="#">Books, Articles, & More</a></li>
                     <li><a href="#">Course Reserves & Course Guides</a></li>
@@ -123,7 +145,7 @@
                 </ul>
             </div>
             <div class="footer-links">
-                <h3 class="link-heading">Services</h3>
+                <h3>Services</h3>
                 <ul>
                     <li><a href="#">Borrow, Request, Renew</a></li>
                     <li><a href="#">Get help with research</a></li>
@@ -135,7 +157,7 @@
             </div>
 
             <div class="footer-links">
-                <h3 class="link-heading">About</h3>
+                <h3>About</h3>
                 <ul>
                     <li><a href="#">Library Calendar</a></li>
                     <li><a href="#">Job Opportunities</a></li>
