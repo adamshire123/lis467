@@ -245,7 +245,7 @@ footer {
     .hero {
         background: url(../images/hero1-small.jpg) no-repeat center top fixed;
         background-size: auto 100% ;
-        padding-top: 5%;
+        padding-top: 2em;
     }
     .global-header {
         font-size: 1.5em;
@@ -266,8 +266,7 @@ footer {
     
     .hero {
         background: url(../images/hero1.jpg) no-repeat center top fixed;
-        background-size: auto 100% ;
-        padding-top: 5%;
+        
     }
 .container {
         text-align: center;
